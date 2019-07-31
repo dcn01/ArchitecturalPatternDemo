@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="handlers"
+            type="com.example.architecturalpatterndemo.mvvm.MyHandlers" />
+
+        <variable
+            name="greetingGeneratorObj"
+            type="com.example.architecturalpatterndemo.mvvm.GreetingGeneratorObj" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/greetingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{greetingGeneratorObj.baseText}" />
+
+        <Button
+            android:id="@+id/helloButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers.onClickHello}"
+            android:text="hello" />
+
+        <Button
+            android:id="@+id/goodbyeButtonClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{handlers.onClickGoodbye}"
+            android:text="Good bye" />
+
+    </LinearLayout>
+
+
+</layout>
