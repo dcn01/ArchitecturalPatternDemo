@@ -18,16 +18,16 @@ public class GreetingGeneratorModel extends AsyncTask<Void, Void, Integer> {
     @Override
     protected Integer doInBackground(Void... params) {
         try {
-            Thread.sleep(2000); // Simulate computing
+            // Simulate computing
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
         }
-
         return (int) (Math.random() * 100);
     }
 
     @Override
     protected void onPostExecute(Integer randomInt) {
-        // Model层调用View
+        // （3）Model层调用View
         if ("HelloWorld".equals(baseText)) {
             greetingTextView.setTextColor(Color.RED);
         } else {

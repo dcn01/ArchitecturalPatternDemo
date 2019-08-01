@@ -1,6 +1,5 @@
 package com.example.architecturalpatterndemo.mvvm;
 
-import android.util.Log;
 import android.view.View;
 
 public class MyHandlers {
@@ -11,12 +10,12 @@ public class MyHandlers {
     }
 
     public void onClickHello(View view) {
-        Log.v("MyHandlers", "onClickHello");
+        // （2）ViewModel层调用Model层
         new GreetingGeneratorModel("HelloWorld", greetingGeneratorObj).execute();
     }
 
     public void onClickGoodbye(View view) {
-        Log.v("MyHandlers", "onClickGoodbye");
+        // （2）ViewModel层调用Model层
         new GreetingGeneratorModel("GoodBye", greetingGeneratorObj).execute();
     }
 }

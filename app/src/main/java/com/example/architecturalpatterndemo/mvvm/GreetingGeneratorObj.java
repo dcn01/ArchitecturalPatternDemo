@@ -5,6 +5,7 @@ import androidx.databinding.Bindable;
 
 import com.example.architecturalpatterndemo.BR;
 
+// 数据对象类
 public class GreetingGeneratorObj extends BaseObservable {
     public static String baseText;
 

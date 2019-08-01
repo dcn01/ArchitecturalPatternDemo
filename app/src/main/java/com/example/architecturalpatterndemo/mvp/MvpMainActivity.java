@@ -29,14 +29,14 @@ public class MvpMainActivity extends MvpActivity<HelloWorldView, HelloWorldPrese
         helloButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 调用Presenter层数据操作
+                // （1）调用Presenter层数据操作
                 presenter.greetHello();
             }
         });
         goodbyeButtonClicked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 调用Presenter层数据操作
+                // （1）调用Presenter层数据操作
                 presenter.greetGoodbye();
             }
         });

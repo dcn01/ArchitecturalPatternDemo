@@ -16,7 +16,8 @@ public class GreetingGeneratorModel extends AsyncTask<Void, Void, Integer> {
     @Override
     protected Integer doInBackground(Void... params) {
         try {
-            Thread.sleep(2000); // Simulate computing
+            // Simulate computing
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
         }
 
@@ -25,6 +26,7 @@ public class GreetingGeneratorModel extends AsyncTask<Void, Void, Integer> {
 
     @Override
     protected void onPostExecute(Integer randomInt) {
+        // （3）ViewModel层调用ViewModel层
         greetingGeneratorObj.setBaseText(baseText + randomInt);
     }
 }
