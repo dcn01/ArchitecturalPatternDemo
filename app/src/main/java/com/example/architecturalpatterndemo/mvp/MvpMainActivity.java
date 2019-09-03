@@ -9,8 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.example.architecturalpatterndemo.R;
-import com.example.architecturalpatterndemo.mvp.presenter.HelloWorldPresenter;
-import com.example.architecturalpatterndemo.mvp.view.HelloWorldView;
 import com.hannesdorfmann.mosby.mvp.MvpActivity;
 
 // View层，视图层

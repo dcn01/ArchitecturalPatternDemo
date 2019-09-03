@@ -1,4 +1,4 @@
-package com.example.architecturalpatterndemo.mvp.view;
+package com.example.architecturalpatterndemo.mvp;
 
 import com.hannesdorfmann.mosby.mvp.MvpView;
 
